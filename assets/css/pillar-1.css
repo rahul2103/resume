@@ -11943,3 +11943,454 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
     border-radius: 4px;
   }
 }
+
+/* 2026 Professional Refresh */
+:root {
+  --rs-bg: #f3f6fb;
+  --rs-bg-accent: #e4ebf7;
+  --rs-surface: #ffffff;
+  --rs-ink: #152033;
+  --rs-muted: #5a6880;
+  --rs-brand: #1f4f8a;
+  --rs-brand-2: #2f7cc2;
+  --rs-line: #d8e0ec;
+}
+
+body {
+  background:
+    radial-gradient(circle at 12% 16%, rgba(47, 124, 194, 0.12) 0%, rgba(47, 124, 194, 0) 36%),
+    radial-gradient(circle at 88% 12%, rgba(31, 79, 138, 0.14) 0%, rgba(31, 79, 138, 0) 34%),
+    linear-gradient(180deg, var(--rs-bg) 0%, var(--rs-bg-accent) 100%);
+  color: var(--rs-ink);
+}
+
+.resume-wrapper {
+  padding-top: 48px;
+  padding-bottom: 80px;
+}
+
+.resume-wrapper-inner {
+  max-width: 1000px;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(12, 28, 56, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.resume-header {
+  background:
+    linear-gradient(120deg, #1a365f 0%, #245489 42%, #2f7cc2 100%);
+  color: rgba(255, 255, 255, 0.95);
+  height: auto;
+  min-height: 200px;
+}
+
+.resume-header .picture {
+  width: 170px;
+  border-color: rgba(255, 255, 255, 0.45) !important;
+  border-radius: 18px;
+  box-shadow: 0 16px 24px rgba(7, 20, 40, 0.28);
+}
+
+.resume-picture-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0 1rem 2rem;
+}
+
+.primary-info {
+  min-width: 0;
+}
+
+.resume-header .name {
+  letter-spacing: 0.08rem;
+  font-size: clamp(1.9rem, 3.8vw, 2.5rem);
+  line-height: 1.1;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.resume-header .title {
+  font-size: 1.2rem;
+  color: rgba(238, 246, 255, 0.95);
+}
+
+.professional-subtitle {
+  font-size: 1.02rem;
+  color: rgba(224, 236, 253, 0.9);
+  overflow-wrap: anywhere;
+}
+
+.contact-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 0.9rem;
+  align-items: center;
+}
+
+.resume-header a {
+  color: #e4f0ff;
+  font-weight: 600;
+}
+
+.resume-header a:hover {
+  color: #ffffff;
+}
+
+.resume-social .fa-container {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.resume-social a:hover .fa-container {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.27);
+}
+
+.resume-body {
+  background: linear-gradient(180deg, #fbfdff 0%, #f8fbff 100%);
+}
+
+.resume-section {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #e7edf6;
+  border-radius: 16px;
+  padding: 1.4rem;
+  box-shadow: 0 8px 22px rgba(30, 56, 89, 0.06);
+  animation: rs-fade-up 0.5s ease both;
+}
+
+.resume-section-title {
+  font-size: 1.06rem;
+  color: var(--rs-brand);
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem !important;
+}
+
+.resume-section-title:after {
+  width: 72px;
+  height: 3px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, var(--rs-brand) 0%, var(--rs-brand-2) 100%);
+}
+
+.resume-section-content,
+.resume-section-content p,
+.resume-section-content li {
+  color: var(--rs-muted);
+}
+
+.key-highlight {
+  display: inline-block;
+  font-weight: 800;
+  color: #123c6c;
+  background: linear-gradient(180deg, rgba(47, 124, 194, 0.18) 0%, rgba(47, 124, 194, 0.11) 100%);
+  border-radius: 6px;
+  padding: 0.05rem 0.35rem;
+}
+
+.resume-position-title,
+.resume-award-name,
+.resume-degree,
+.resume-skill-name,
+.resume-skills-cat,
+.resume-lang-name {
+  color: var(--rs-ink);
+}
+
+.resume-company-name {
+  color: #3b4e69;
+  font-weight: 700;
+}
+
+.resume-position-time,
+.resume-degree-time {
+  color: #7a8ba6;
+}
+
+.resume-timeline-item-desc-heading {
+  font-weight: 800;
+  color: #153d6d;
+  background: #eaf2ff;
+  border: 1px solid #d5e4fb;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  margin-bottom: 0.7rem;
+}
+
+.resume-timeline-item-desc ul:not(.list-inline) li {
+  font-weight: 600;
+  color: #495f7f;
+}
+
+.resume-skills-cat {
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.resume-skill-name {
+  font-weight: 700;
+  color: #1c3e69;
+}
+
+.resume-timeline {
+  padding-left: 0;
+}
+
+.resume-timeline:before {
+  content: none;
+}
+
+.resume-timeline-item {
+  background: #ffffff;
+  border: 1px solid var(--rs-line);
+  border-left: 1px solid var(--rs-line);
+  border-radius: 12px;
+  padding: 1rem 1rem 0.2rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.resume-timeline-item:before {
+  content: none;
+}
+
+.resume-progress {
+  height: 0.58rem;
+  background-color: #e3ebf6;
+  border-radius: 999px;
+}
+
+.theme-progress-bar-dark {
+  background: linear-gradient(90deg, #1f4f8a 0%, #2f7cc2 100%);
+  border-radius: 999px;
+}
+
+.badge.bg-secondary,
+.badge.badge-light {
+  border-radius: 999px;
+  font-weight: 700;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid #d4e3f6;
+  line-height: 1.25;
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+}
+
+.resume-section-content .list-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-section-content .list-inline-item {
+  margin: 0 !important;
+}
+
+.badge.bg-secondary {
+  background: #e8effa !important;
+  color: #284a77;
+}
+
+.badge.badge-light {
+  background: #edf2fa;
+  color: #3e5678;
+}
+
+.floating-btn {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.72rem 1.1rem;
+  background: linear-gradient(135deg, #1f4f8a 0%, #2f7cc2 100%) !important;
+  box-shadow: 0 14px 30px rgba(18, 53, 98, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.floating-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 34px rgba(18, 53, 98, 0.4);
+}
+
+.footer .copyright {
+  color: #6d7f99;
+}
+
+.resume-section:nth-of-type(2) {
+  animation-delay: 0.05s;
+}
+
+.resume-section:nth-of-type(3) {
+  animation-delay: 0.1s;
+}
+
+@keyframes rs-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .resume-section {
+    animation: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .resume-header .picture {
+    width: 150px;
+  }
+
+  .resume-header .name {
+    font-size: 2.1rem;
+  }
+
+  .resume-section {
+    padding: 1.1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .resume-wrapper {
+    padding-top: 0;
+    padding-bottom: 64px;
+  }
+
+  .resume-wrapper-inner {
+    border-radius: 0;
+  }
+
+  .resume-header {
+    min-height: auto;
+    text-align: center;
+  }
+
+  .resume-header .picture {
+    width: 132px;
+    border-radius: 14px;
+  }
+
+  .resume-picture-holder {
+    padding: 1rem 0 0.3rem 0;
+  }
+
+  .professional-subtitle {
+    font-size: 0.96rem;
+  }
+
+  .contact-line {
+    justify-content: center;
+  }
+
+  .floating-btn {
+    right: 14px;
+    bottom: 14px;
+    padding: 0.62rem 0.85rem;
+  }
+
+  .floating-btn span {
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive hardening for long content and varied screens */
+.resume-company-name,
+.resume-company-name a,
+.contact-line a,
+.resume-timeline-item-desc a,
+.resume-section-content p,
+.resume-section-content li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.resume-body {
+  padding: 2rem !important;
+}
+
+.resume-timeline-item {
+  margin-bottom: 1.15rem;
+}
+
+.resume-section {
+  margin-bottom: 1.15rem !important;
+}
+
+@media (max-width: 991.98px) {
+  .resume-body {
+    padding: 1.4rem !important;
+  }
+
+  .resume-header .row.p-3 {
+    row-gap: 0.7rem;
+  }
+
+  .secondary-info {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .resume-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin-bottom: 0;
+  }
+
+  .resume-social li {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .resume-body {
+    padding: 1rem !important;
+  }
+
+  .resume-header .name {
+    font-size: 1.75rem;
+    letter-spacing: 0.04rem;
+  }
+
+  .resume-header .title {
+    font-size: 1.05rem;
+  }
+
+  .professional-subtitle {
+    line-height: 1.45;
+    margin-top: 0.3rem;
+  }
+
+  .secondary-info {
+    justify-content: center;
+  }
+
+  .resume-social {
+    justify-content: center;
+  }
+
+  .resume-company-name {
+    margin-top: 0.2rem;
+  }
+
+  .resume-timeline-item {
+    padding: 0.85rem 0.85rem 0.2rem 0.85rem;
+  }
+
+  .badge.bg-secondary,
+  .badge.badge-light {
+    margin-bottom: 0.45rem;
+  }
+}
