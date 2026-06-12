@@ -11971,10 +11971,9 @@ body {
 
 .resume-wrapper-inner {
   max-width: 1000px;
-  border-radius: 22px;
+  border-radius: 0px;
   overflow: hidden;
   box-shadow: 0 24px 60px rgba(12, 28, 56, 0.16);
-  border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .resume-header {
@@ -11982,7 +11981,7 @@ body {
     linear-gradient(120deg, #1a365f 0%, #245489 42%, #2f7cc2 100%);
   color: rgba(255, 255, 255, 0.95);
   height: auto;
-  min-height: 200px;
+  min-height: 165px;
 }
 
 .resume-header .picture {
